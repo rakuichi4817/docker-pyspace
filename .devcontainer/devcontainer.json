@@ -1,0 +1,27 @@
+
+{
+	"name": "PySpace",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+	"workspaceFolder": "/pyspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"njpwerner.autodocstring",
+				"mhutchie.git-graph",
+				"MS-CEINTL.vscode-language-pack-ja",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ionutvmi.path-autocomplete",
+				"DavidAnson.vscode-markdownlint",
+				"ms-toolsai.jupyter",
+				"redhat.vscode-yaml"
+			]
+		}
+	},
+	"mounts": [
+		"source=${localWorkspaceFolder}/,target=/pyspace,type=bind",
+	]
+}
