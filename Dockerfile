@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y git
 
 # Python関係
 RUN pip install --upgrade pip
-RUN pip install pipenv
+RUN pip install pipenv black flake8
